@@ -75,6 +75,7 @@ class CustomBuildPy(build_py):
 if __name__ == '__main__':
     # noinspection PyBroadException
     try:
+        subprocess.check_call(["git", "submodule", "update", "--init", "--recursive"])
         cmd = ['git', 'rev-parse', '--short', 'HEAD']
         revision = '+' + subprocess.check_output(cmd).decode('ascii').rstrip()
     except:
