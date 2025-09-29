@@ -18,7 +18,7 @@ build_include_dirs = [
     'third-party/cutlass/include',
     'third-party/fmt/include',
 ]
-build_libraries = ['cuda', 'cudart', 'nvrtc']
+build_libraries = ['cudart', 'nvrtc']
 build_library_dirs = [
     f'{CUDA_HOME}/lib64',
     f'{CUDA_HOME}/lib64/stubs'
